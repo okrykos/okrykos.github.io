@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+@font-face{
+    src: url(fonts/Kanit/Kanit-Regular.ttf);
+    font-family:'Kanit';
+}
+header{
+width: 100%;
+height: 120px;
+bottom: 20px;
+margin: -2px auto;
+display: flex;
+align-items: center;
+font-size: 42px;
+}
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/1.png);
+    background-size:100% ;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50px;
+} 
+.fa-times{
+    width: 5%;
+    color: black;
+    font-size: 90%;
+}
+.suffix{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    width: 335px;
+    height: 345px;
+    display:none;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    opacity: 90%;
+}
+a:visited,a:link{
+color: black;
+}
+.menu-icon:hover>.link{
+display: flex;
+flex-direction: column;
+font-size: 16px;
+font-family: 'Kanit';
+justify-content: space-around;
+align-items: flex-start;
+padding: 40px 65px 47px 64px;
+
+}
+
+.feature{
+    font-family: 'Kanit';
+    font-size: 18px;
+    margin: 43px 145px 26px;
+    font-weight: bold;
+}
+article{
+    width: 100%;
+    height: fit-content;
+}
+.first-row{
+    width: 100%;
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+}
+.left-first{
+    width: 50%;
+}
+.first-row-image{
+    width: 100%;
+    height: 100%;
+}
+.right-first{
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 106px 70px 110px 105px;
+}
+.upper-row{
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    padding-bottom: 30px;
+}
+.date{
+    color: white;
+    font-family:'Kanit';
+    font-size: 14px;
+    letter-spacing: 7px;
+    width: 50%;
+}
+.lifestyle{
+    width: 50%;
+    color: white;
+    font-family:'Kanit';
+    font-size: 16px;
+    text-align: end;
+    text-decoration: underline;
+}
+.middle-row{
+    color: white;
+    font-family:'Kanit';
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 31px 0;
+}
+.bottom-row{
+    color: white;
+    font-family:'Kanit';
+    font-size: 14px;
+    font-weight: 500;
+    width: 89%;
+    padding-bottom: 49px;
+}
+.more{
+    width: 30%;
+    height: 50px;
+}
+.read{
+    width: 198px;
+    height: 40px;
+    background-color: black;
+    outline:1px solid white;
+    color: white;  
+    position: absolute; 
+    font-size: 12px;
+}
+.second-row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 47px 0 81px;
+}
+.left-side{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-side{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+.ls-img{
+ 
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px 0 5px; 
+}
+.rs-img{
+  
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px 0 5px;
+}
+.third-row{
+    width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 70px;
+}
+.left-text{
+    width: 570px;
+    margin: 0 22px;
+    padding-right: 20px;
+}
+.right-text{
+    width: 570px;
+    margin: 0 -13px;
+    padding-right: 15px;
+}
+.small-text{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    padding: 14px 24px 14px 7px;
+}
+.small-date{
+    width: 50%;
+    height: 40px;
+    font-size: 12px;
+    font-family: 'Kanit';
+    letter-spacing: 6px;
+    align-items: center;
+}
+.small-lifestyle{
+    width: 50%;
+    height: 40px;
+    font-size: 12px;
+    font-family: 'Kanit';
+    text-decoration: underline;
+    align-items: center;
+    text-align: right;
+  
+}
+.big-text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    word-spacing: 4px;
+    font-size: 24px;
+    font-family: 'Kanit';
+    font-weight: bold;
+    padding: 0px 24px 0px 7px;
+}
+.medium-text{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: 'Kanit';
+    padding: 15px 25px 10px 7px;
+}
+.fourth-row{
+    width: 100%;
+    height: 335px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.photos{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.img-fourth{
+    width: 363px;
+    height: 240px;
+}
+.info-text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 2px 5px;
+}
+.caption{
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    font-family: 'Kanit';
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    word-spacing: 1px;
+    padding-left: 5px;
+}
+.see-all{
+    width :100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see{
+    width:238px;
+    height: 42px;
+    background-color:rgba(48, 48, 48, 1);
+    color: white;
+    font-family: 'Kanit';
+    outline: white;
+}   
+.fifth-row{
+    width: 100%;
+    display: flex;
+    margin: 28px 0;
+    justify-content: center;
+}
+.left-fifth{
+    width: 571px;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-fifth{
+    width: 571px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 105px ;
+    justify-content: space-around;
+    align-items: center;
+}
+.issue{
+    font-size: 34px;
+    font-family: 'Kanit';
+    font-weight: 500;
+    line-height: 50px;
+    color: white;
+    letter-spacing: 1px;
+}
+.subscribe{
+    width: 200px;
+    height: 42px;
+    background-color: black;
+    outline:2px solid white;
+    color: white;
+    font-family:'Kanit';
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+}
+.sixth-row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.interview{
+    font-family: 'Kanit';
+    font-size: 18px;
+    margin: 54px 146px 28px;
+    font-weight: bold;
+}
+.seventh-row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -9px;
+}
+.news{
+    font-family: 'Kanit';
+    font-size: 18px;
+    margin: -14px 146px 28px;
+    font-weight: bold;
+}
+.img-fifth{
+    width: 100%;
+    height: 360px;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 144px;
+    padding-top: 27px;
+    margin-top: 51px;
+}
+.footer-img{
+    padding:20px;
+}
+.footer-text{
+    color: rgba(255, 255, 255, 0.692);
+    font-family: 'Kanit';
+    font-size: 12px;
+    font-weight: 300;
+}
+@media screen and (max-width :1200px){
+    .menu-icon{
+        width: 30px;
+        height: 30px;
+        background-image: url(assets/Group\ 4\ Copy\ 2.png);
+    }
+    .feature {
+        
+        font-family: 'Kanit';
+        font-size: 18px;
+        margin: 43px 96px 26px;
+        font-weight: bold;
+    }
+    .second-row {
+
+        display: flex;
+        height: 601px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 69px 0 69px;
+    }
+    .left-side {
+        width: 455px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side {
+        width: 455px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ls-img {
+        width: 455px;
+        height: 301px;
+    }
+    .rs-img {
+        width: 455px;
+        height: 301px;
+    }
+    .left-text {
+        width: 455px;
+        margin: 0px 43px;
+        padding-right: 37px;
+    }
+    .right-text {
+        width: 455px;
+        margin: 0 26px;
+        padding-right: 34px;
+    }
+    .img-three{
+        width: 295px;
+        height: 195px;
+    }
+    .caption{
+        width: 295px;
+    }
+    .left-fifth{
+        width: 470px;
+        height: 360px;
+    }
+    .right-fifth{
+        width: 470px;
+        height: 360px;
+    }
+   
+}
+@media screen and (max-width:970px){
+    .first-row{
+        height: 354px;
+    }
+    .right-first{
+        padding: 45px 0px 0px 20px;
+    }
+    .upper-row{
+        padding: 0;
+    }
+    .middle-row{
+        font-size: 18px;
+
+    }
+    .bottom-row{
+        font-size: 12px;
+        padding-bottom: 45px;
+    }
+    
+    .lifestyle{
+        display: none;
+    }
+    .feature {
+        
+        font-family: 'Kanit';
+        font-size: 18px;
+        margin: 43px 96px 26px;
+        font-weight: bold;
+    }
+    .second-row {
+        overflow: scroll;
+        display: flex;
+        height: 550px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 69px 0 69px;
+    }
+    .left-side {
+        width: 345px;
+        height: 228px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side {
+        width: 345px;
+        height: 228px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ls-img {
+        width: 345px;
+        height: 228px;
+    }
+    .rs-img {
+        width: 345px;
+        height: 228px;
+    }
+    .left-text {
+        width: 345px;
+        margin: 0px 43px;
+        padding-right: 37px;
+    }
+    .right-text {
+        width: 345px;
+        margin: 0 26px;
+        padding-right: 34px;
+    }
+    .img-three{
+        width: 220px;
+        height: 145px;
+    }
+    .caption{
+        width: 220px;
+        font-size: 16px;
+    }
+    .fourth-row{
+        height: 247px;
+        overflow: scroll;
+    }
+    
+    .left-fifth {
+        width: 359px;
+        height: 275px;
+    }
+    .right-fifth{
+        width: 359px;
+        height: 275px;
+        padding: 60px;
+    }
+    .sixth-row{
+        overflow: scroll;
+    }
+    .seventh-row{
+        overflow: scroll;
+    }
+    .issue{
+        font-size: 18px;
+    }
+    .img-fifth{
+        height: 275px;
+    }
+   
+}
+@media screen and (max-width:600px) {
+    .suffix-img{
+        width: 105px;
+        height: 20px;
+    }
+    .first-row{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-first{
+        padding: 15px 0px 0px 15px;
+        width: 100%;
+        height: 249px;
+    }
+    .left-first{
+        width: 100%;
+        height: 294px;
+    }
+    .first-row-image{
+        width: 100%;
+        height: 294px;
+    }
+    .upper-row{
+        padding: 0;
+    }
+    .middle-row{
+        padding: 18px 0;
+        font-size: 18px;
+    }
+    .bottom-row{
+      padding-bottom: 30px;
+      font-size: 12px;
+    }
+    
+    .lifestyle{
+        display: none;
+    }
+    .feature {
+        font-size: 0;
+        margin: 10px;
+    }
+    .small-lifestyle{
+        display: none;
+    }
+    .second-row {
+        display: flex;  
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side {
+        width: 295px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side {
+        width: 295px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ls-img {
+        width: 295px;
+        height: 198px;
+        padding: 0;
+    }
+    .rs-img {
+        width: 295px;
+        height: 195px;
+        padding: 0;
+    } 
+    .photos{
+        width: 295px;
+    }
+    .img-three{
+        width: 220px;
+        height: 145px;
+    }
+    .small-text{
+        height: 17px;
+    }
+    .big-text{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .medium-text{
+        font-size: 14px;
+    }
+    .caption{
+        width: 220px;
+        font-size: 16px;
+    }
+    .fourth-row{
+        height: 247px;
+        overflow:scroll;
+    }
+    .fifth-row{
+        flex-direction: column;
+    }
+    .left-fifth {
+        width: 100%;
+        height: 275px;
+    }
+    .right-fifth{
+        width: 100%;
+        height: 175px;
+        padding: 60px;
+    }
+    .sixth-row{
+        width: 100%;
+        height: 247px;
+        overflow: scroll;
+    }
+    .interview{
+        margin: 10px 15px;
+    }
+    .news{
+        margin: 10px 15px;
+    }
+    .seventh-row{
+        width: 100%;
+        height: 247px;
+        overflow: scroll;
+    }
+    .issue{
+        font-size: 18px;
+    }
+    .img-fifth{
+        height: 275px;
+    }
+    
+}
